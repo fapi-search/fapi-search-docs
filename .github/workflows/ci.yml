@@ -19,4 +19,5 @@ jobs:
           token: ${{ secrets.GHP_DEPLOY_REPO_TOKEN }}
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
-      - run: cd fapi-search.github.io && mkdocs gh-deploy --config-file ../mkdocs.yml --remote-branch main
+      - run: mkdocs gh-deploy --config-file ../mkdocs.yml --remote-branch main
+        working-directory: fapi-search.github.io
