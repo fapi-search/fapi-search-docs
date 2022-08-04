@@ -14,8 +14,8 @@ jobs:
       - run: pip install mkdocs-material
       - uses: actions/checkout@v3
         with:
-          repository: git@github.com:fapi-search/fapi-search.github.io.git
+          repository: fapi-search/fapi-search.github.io
           token: ${{ secrets.GHP_DEPLOY_REPO_TOKEN }}
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
-      - run: mkdocs gh-deploy --config-file ../fapi-search-docs/mkdocs.yml --remote-branch main
+      - run: cd fapi-search.github.io && mkdocs gh-deploy --config-file ../mkdocs.yml --remote-branch main
