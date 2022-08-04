@@ -1,0 +1,23 @@
+site_name: FastAPI Search
+site_description: A FastAPI microservice architecture for PostgreSQL with OpenSearch or ElasticSearch.
+
+theme:
+  name: material
+  palette:
+    primary: black
+    accent: teal
+    
+nav:
+  - FastAPI Search: index.md
+  - Motivation: motivation.md
+  - How to use this document: how-to.md
+  - Build and Run a Search Project:
+    - Introduction: build-search-project/index.md
+    - Setup Python, Poetry, and Cookiecutter: build-search-project/setup-env.md
+    - Create a Project from the Cookiecutter: build-search-project/create-project.md
+    - Project walkthrough: build-search-project/project-walkthrough.md
+    - Supporting service setup: build-search-project/service-setup.md
+    - Running the app: build-search-project/run-app.md
+    - Linting code: build-search-project/lint-code.md
+    - Running tests: build-search-project/run-tests.md
+    - Next steps: build-search-project/next-steps.md
